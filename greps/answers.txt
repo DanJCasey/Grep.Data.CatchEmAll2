@@ -1,15 +1,36 @@
 # Part 1
 ### a)
+grep "beed" filescan_00.1 * > beedrill.txt
+grep "bulb" filescan_00.1 * > bulbasaur.txt
+grep "butt" filescan_00.1 * > butterfree.txt
+grep "blas" filescan_00.1 * > blastoise.txt
+
+grep zard$ filescan_00.2 * > charizard.txt
+grep leon$ filescan_00.2 * > charmeleon.txt
+grep nder$ filescan_00.2 * > charmander.txt
+
+grep ^ivys filescan_00.3 * > ivysaur.txt
+grep ^pika filescan_00.3 * > pikachu.txt
+grep ^meow filescan_00.3 * > meowth.txt
+grep ^jigg filescan_00.3 * > jigglypuff.txt
+
+grep ^psy filescan_00.4 * > psyduck.txt
+grep ^wart filescan_00.4 * > wartortle.txt
+grep ^squir filescan_00.4 * > squirtle.txt
+grep ^venu filescan_00.4 * > venusaur.txt
 
 
 
 
 ### b)
 
+grep -l "." * | wc -l
+the answer given is 16 which includes the instruction.txt file so the total number of pokemon is 15.
 
 
 ### c)
-
+Grep.Data.CatchEmAll2 % find captured/ -type f -exec wc -l {} + | sort -rn
+Pikachu, charizard, and beedrill.
 
 
 
